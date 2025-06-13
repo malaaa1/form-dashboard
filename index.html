@@ -1,94 +1,139 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dashboard Form PT Platinum Ceramics Industry Lebani Waras</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #eef2f3;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #eef2f3, #ffffff);
       margin: 0;
-      padding: 20px;
+      padding: 40px 20px;
       color: #333;
     }
 
-    h1 {
+    .header {
       text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header img {
+      height: 70px;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
       color: #003366;
+      font-size: 28px;
+    }
+
+    .dashboard-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .form-group {
       background: #ffffff;
-      border-radius: 12px;
+      border-radius: 16px;
       padding: 20px;
-      margin: 20px auto;
-      max-width: 400px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s ease;
+    }
+
+    .form-group:hover {
+      transform: translateY(-5px);
     }
 
     .form-group h3 {
-      margin-top: 0;
+      margin-bottom: 20px;
+      color: #003366;
+      text-align: center;
+      font-size: 18px;
     }
 
     .form-btn {
-      display: block;
+      display: inline-block;
+      width: 100%;
       text-align: center;
-      margin: 10px auto;
+      margin: 5px 0;
       padding: 12px 20px;
-      border-radius: 6px;
+      border-radius: 8px;
       text-decoration: none;
       color: white;
       font-weight: bold;
-      background-color: #0066cc;
+      background-color: #007bff;
+      transition: background-color 0.3s ease;
     }
 
     .form-btn.secondary {
-      background-color: #444;
+      background-color: #6c757d;
     }
 
     .form-btn:hover {
-      opacity: 0.9;
+      background-color: #0056b3;
+    }
+
+    .form-btn.secondary:hover {
+      background-color: #555;
+    }
+
+    @media (max-width: 480px) {
+      .form-group h3 {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Dashboard Form</h1>
 
-  <div class="form-group">
-    <h3>Form Mekanik Plant Lebani Waras</h3>
-    <a href="http://bit.ly/FormMekanikPlant" class="form-btn" target="_blank">Form</a>
-    <a href="http://bit.ly/DataMekanikPlanLebaniWaras" class="form-btn secondary" target="_blank">Data</a>
+  <div class="header">
+    <img src="https://platinumceramics.com/css/images/logo-6.png" alt="Logo Platinum Ceramics" />
+    <h1>Dashboard Form PT Platinum Ceramics Industry</h1>
   </div>
 
-  <div class="form-group">
-    <h3>Form Weekly Checklist Mesin KILN</h3>
-    <a href="http://bit.ly/WeeklyChecklistMesinKILN" class="form-btn" target="_blank">Form</a>
-    <a href="http://bit.ly/DataWeeklyChecklistMesinKiln" class="form-btn secondary" target="_blank">Data</a>
-  </div>
+  <div class="dashboard-container">
+    <div class="form-group">
+      <h3>Form Mekanik Plant Lebani Waras</h3>
+      <a href="http://bit.ly/FormMekanikPlant" class="form-btn" target="_blank">Form</a>
+      <a href="http://bit.ly/DataMekanikPlanLebaniWaras" class="form-btn secondary" target="_blank">Data</a>
+    </div>
 
-  <div class="form-group">
-    <h3>Form Monthly Checklis Mesin KILN</h3>
-    <a href="http://bit.ly/MonthlyChecklistMesinKILN" class="form-btn" target="_blank">Form</a>
-    <a href="http://bit.ly/DataMonthlyChecklistMesinKiln" class="form-btn secondary" target="_blank">Data</a>
-  </div>
+    <div class="form-group">
+      <h3>Form Weekly Checklist Mesin KILN</h3>
+      <a href="http://bit.ly/WeeklyChecklistMesinKILN" class="form-btn" target="_blank">Form</a>
+      <a href="http://bit.ly/DataWeeklyChecklistMesinKiln" class="form-btn secondary" target="_blank">Data</a>
+    </div>
 
-  <div class="form-group">
-    <h3>Form Monthly Checklis Mesin BMG</h3>
-    <a href="http://bit.ly/MonthlyChecklistMesinBMG" class="form-btn" target="_blank">Form</a>
-    <a href="http://bit.ly/DataMonthlyChecklistBMG" class="form-btn secondary" target="_blank">Data</a>
-  </div>
+    <div class="form-group">
+      <h3>Form Monthly Checklist Mesin KILN</h3>
+      <a href="http://bit.ly/MonthlyChecklistMesinKILN" class="form-btn" target="_blank">Form</a>
+      <a href="http://bit.ly/DataMonthlyChecklistMesinKiln" class="form-btn secondary" target="_blank">Data</a>
+    </div>
 
-  <div class="form-group">
-    <h3>Form Controlling Maintenance Press Master</h3>
-    <a href="http://bit.ly/FormControllingMaintenancePressMaster" class="form-btn" target="_blank">Form</a>
-    <a href="http://bit.ly/DataControllingMaintenancePressMaster" class="form-btn secondary" target="_blank">Data</a>
-  </div>
+    <div class="form-group">
+      <h3>Form Monthly Checklist Mesin BMG</h3>
+      <a href="http://bit.ly/MonthlyChecklistMesinBMG" class="form-btn" target="_blank">Form</a>
+      <a href="http://bit.ly/DataMonthlyChecklistBMG" class="form-btn secondary" target="_blank">Data</a>
+    </div>
 
-  <div class="form-group">
-    <h3>Form Laporan Perbaikan Harian Teknik</h3>
-    <a href="http://bit.ly/FormLaporanPerbaikanHarianTeknik" class="form-btn" target="_blank">Form</a>
-    <a href="http://bit.ly/DataLaporanPerbaikanHarianTeknik" class="form-btn secondary" target="_blank">Data</a>
+    <div class="form-group">
+      <h3>Form Controlling Maintenance Press Master</h3>
+      <a href="http://bit.ly/FormControllingMaintenancePressMaster" class="form-btn" target="_blank">Form</a>
+      <a href="http://bit.ly/DataControllingMaintenancePressMaster" class="form-btn secondary" target="_blank">Data</a>
+    </div>
+
+    <div class="form-group">
+      <h3>Form Laporan Perbaikan Harian Teknik</h3>
+      <a href="http://bit.ly/FormLaporanPerbaikanHarianTeknik" class="form-btn" target="_blank">Form</a>
+      <a href="http://bit.ly/DataLaporanPerbaikanHarianTeknik" class="form-btn secondary" target="_blank">Data</a>
+    </div>
   </div>
 </body>
 </html>
